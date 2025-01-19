@@ -114,3 +114,18 @@ public class Cricketer implements Comparable<Cricketer> {
                 .compare(this, otherCricketer);
     }
 }
+
+
+// Entity Class: Represents a database table.
+// Annotations: Used for ORM (Object-Relational Mapping).
+// Fields: Represent columns in the table.
+
+// @Id and @GeneratedValue(strategy = GenerationType.IDENTITY) indicate that cricketerId is the primary key and its value is automatically generated.
+// @ManyToOne(cascade = CascadeType.MERGE) and @JoinColumn(name = "team_id") indicate a many-to-one relationship with the Team entity, with team_id as the foreign key.
+// Other fields represent various attributes of a cricketer.
+
+// Constructors: Initialize objects.
+// Comparable Interface: Allows sorting of Cricketer objects.
+
+// This method uses a Comparator to compare the experience of two Cricketer objects. The comparingInt method creates a comparator that compares int values extracted by the getExperience method.
+// The :: operator in Java is called the method reference operator. It is used to refer to methods or constructors without invoking them. It provides a way to pass a method as an argument to a function.

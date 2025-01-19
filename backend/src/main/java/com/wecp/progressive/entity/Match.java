@@ -5,6 +5,7 @@ import java.util.Date;
 
 // Since "match" is a reserved word in mysql, using table name as "matches"
 @Entity(name = "matches")
+// The :: operator in Java is called the method reference operator. It is used to refer to methods or constructors without invoking them. It provides a way to pass a method as an argument to a function.
 public class Match {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +19,7 @@ public class Match {
     @JoinColumn(name = "second_team_id")
     private Team secondTeam;
 
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.DATE) //@Temporal(TemporalType.DATE) specifies that matchDate should be stored as a date in the database.
     private Date matchDate;
 
     private String venue;

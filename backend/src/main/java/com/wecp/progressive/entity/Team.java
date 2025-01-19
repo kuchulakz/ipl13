@@ -70,4 +70,5 @@ public class Team implements Comparable<Team>{
     public int compareTo(Team otherTeam) {
         return this.getTeamName().compareTo(otherTeam.getTeamName());
     }
+    //This method compares Team objects based on their establishmentYear
 }
