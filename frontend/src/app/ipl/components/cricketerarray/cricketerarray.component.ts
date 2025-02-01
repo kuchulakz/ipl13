@@ -6,14 +6,11 @@ import { Cricketer } from '../../types/Cricketer';
   templateUrl: './cricketerarray.component.html',
   styleUrls: ['./cricketerarray.component.scss']
 })
-export class CricketerArrayComponent implements OnInit 
-{
-
+export class CricketerArrayComponent implements OnInit {
 
   // Cricketers array to hold JSON data
   cricketers: Cricketer[] = [];
   showCricketers: boolean = true;
-
 
   constructor() {}
 
